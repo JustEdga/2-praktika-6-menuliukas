@@ -3,7 +3,6 @@ header {
     text-transform: uppercase;
     display: inline-block;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     margin-left: 0;
@@ -255,4 +254,7 @@ h1 {
 }
 .button:hover {
     font-size: 18px;
+}
+nav >span >a >svg {
+    z-index: 1;
 }
