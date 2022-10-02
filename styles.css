@@ -256,52 +256,6 @@ h1 {
 .button:hover {
     font-size: 18px;
 }
-.navbar {
-    z-index: 1;
-    position: absolute;
-}
-.side-nav {
-    background-color: #fff;
-    position:absolute;
-    display: inline-block;
-    height: 65vh;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    overflow-x: hidden;
-    z-index: 1;
-    transition-duration: 0.4s;
-    
-
-}
-.side-nav a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #848484;
-    display: block;
-    margin: 30px 0 35px 15px;
-
-}
-.side-nav .home2 {
-    color:#72C8C0 ;
-}
-.side-nav .btn-close {
-    position: absolute;
-    top: 0;
-    right: 22px;
-    margin-top: 0;
-}
-    
-
-
-@media  only screen and (min-width: 320px) {
-    header {
-        display: none;
-    }
-    main {
-        margin-left: calc((100% - 50px) / 2 );
-        height: 80vh;
-    }
-}
    
 
 @media only screen  and (min-width: 1000px) {
@@ -312,6 +266,7 @@ h1 {
     body >div {
         display: none;
     }
+    
     
     header {
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -571,4 +526,47 @@ h1 {
         font-size: 18px;
     }
 
+}
+
+@media  only screen and (max-width: 425px) {
+    header {
+        display: none;
+    }
+    main {
+        margin-left: 180px;
+    }
+    .navbar {
+        z-index: 1;
+        position: absolute;
+    }
+    .side-nav {
+        background-color: #fff;
+        position:absolute;
+        display: inline-block;
+        height: 65vh;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        overflow-x: hidden;
+        z-index: 1;
+        transition-duration: 0.4s;
+        
+    
+    }
+    .side-nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #848484;
+        display: block;
+        margin: 30px 0 35px 15px;
+    
+    }
+    .side-nav .home2 {
+        color:#72C8C0 ;
+    }
+    .side-nav .btn-close {
+        position: absolute;
+        top: 0;
+        right: 22px;
+        margin-top: 0;
+    }
 }
